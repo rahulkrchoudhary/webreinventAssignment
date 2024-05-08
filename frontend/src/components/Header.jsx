@@ -30,12 +30,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-indigo-500 text-gray-800">
-      <nav className="container mx-auto flex items-center justify-between p-4">
+    // <header className="bg-gradient-to-r from-indigo-500 text-gray-800">
+    <header className="bg-image bg-cover bg-center text-gray-800  " style={{backgroundImage: "url('/src/assets/earth.jpg')"}}>
+
+
+      
+      <nav className="container mx-auto flex items-center justify-between " style={{height:"15rem"}}>
         <Link to='/home' className="text-2xl font-bold">
-          <img src={logo} alt="hoobank" className="w-[50px] h-[50px] rounded" />
+        
         </Link>
-        <div className="flex items-center space-x-4">
+        <div className="flex  items-center space-x-4">
           {userInfo ? (
             <div className="flex items-center space-x-4">
               <button
